@@ -10,7 +10,10 @@ const addImc  = () => {
 
 
     if(meName !== '' && weight !== '' && height !== '') {
-        const calc = (weight / (height * height)).toFixed(1);
+        let formattedHeight = parseFloat(height.replace(",","."))
+        let formattedWeight = parseFloat(weight.replace(",","."))
+
+        const calc = (formattedWeight / (formattedHeight * formattedHeight)).toFixed(1);
 
         let placing = "";
 
