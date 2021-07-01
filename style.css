@@ -112,6 +112,6 @@ header h1 {
     }
     .calculatorImc #result {
         font-size: .9rem;
-        padding: 2;
+        padding: 4;
     }
 }
