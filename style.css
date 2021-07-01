@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+
+}
+
+html {
+    background: url(./images/backgroundIMC.jpg)center center/cover;
+    overflow: hidden;
+    background-blend-mode:color ; 
+    
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+
+header h1 {
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: rgb(180, 175, 175);
+    
+}
+
+.containerImc {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    
+    
+}
+
+.calculatorImc {
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 8px;
+    
+}
+.calculatorImc h2 {
+    margin: 10px 0;
+    color: rgb(180, 175, 175);
+}
+
+.calculatorImc label {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    
+}
+
+.calculatorImc label input {
+    padding: 5px;
+    width: 300px;
+    border-radius: 4px;
+    outline: none;
+    margin: 20px 0;
+    background-color: rgb(182, 179, 179);
+    margin-top: 4px;
+    color: #328FFE;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.calculatorImc input[type="submit"] {
+    width: 150px;
+    padding: 7px;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #328FFE, #2c3c83);
+    color: white;
+    transition: all .3s ease; 
+    cursor:pointer;
+
+}
+
+.calculatorImc input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(45deg, #2c3c83, #328FFE);
+}
+
+.calculatorImc #result {
+    padding: 10px;
+    text-align: center;
+    margin: 15px 0;
+    color: rgb(180, 175, 175);
+}
+
+
+/* Responsividade  */
+
+@media (max-width:600px) {
+    .calculatorImc {
+        width: 300px;
+    }
+    .calculatorImc label input {
+        width: 200px;
+        text-align:left;
+    }
+    .calculatorImc #result {
+        font-size: .9rem;
+    }
+}
