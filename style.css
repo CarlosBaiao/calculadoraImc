@@ -76,7 +76,7 @@ header h1 {
     text-align: center;
 }
 
-.calculatorImc #button {
+.calculatorImc  #button {
     width: 150px;
     padding: 7px;
     border-radius: 4px;
@@ -87,7 +87,7 @@ header h1 {
 
 }
 
-.calculatorImc #button:hover {
+.calculatorImc  #button:hover {
     letter-spacing: 0.5px;
     background: linear-gradient(45deg, #2c3c83, #328FFE);
 }
